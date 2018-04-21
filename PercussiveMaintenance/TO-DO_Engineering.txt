@@ -1,0 +1,21 @@
+//SF | Write TODO List
+//SF | Set Up Audio Manager and Audio System
+//SF | Set Up Basic Music Staff Creation UI
+ZG | Create Towers 
+	What we need from the towers is basic designer modifiable stats and the barebone structure. Designer should be able to set damage in editor.
+ZG | Create Enemies
+	What basic enemies will need 4 stats (at least): Speed, Health, Spawn Point, Type. Type here is a new enum with entries like (normal, fast, flying, heavy, etc.)
+	
+//SF | Create Tempo Manager / Beat Keeper
+	This will be the driver which tells the towers when to fire. Should be a singleton and should be linked to GameClient in some way. Basically just a suped up timer
+	that has some way to interact with either gameclient or towers directly. We should have an integer on here that stores BPM (Beats Per Minute) which is accesible in editor. That will allow us to tweak the tempo to see what seems right. 
+	
+Create HUD
+	Not sure exactly what this will look like. Most of this will probably be in the world but we will at the very least need a button that opens the menu or exits
+	
+Create the Input Manager
+	Nothing fancy here. Really we just want a class that seperates the input from the rest of the code. This will be a singleton and will likely live in the gameclient.
+	Straight forward mapping from the unity key down events to functions so we can change out keys easily. (if(Input.GetKeyDown(KeyCode.A)) Call Function). With current design we will need 4 key down events. Our mouse will likely be handled by individual meshes but ideally at the highest level.
+	
+
+
