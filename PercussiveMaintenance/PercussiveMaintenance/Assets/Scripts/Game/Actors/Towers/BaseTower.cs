@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class BaseTower : RenderedActor
 {
-
+    public TowerData Data;
 	// Use this for initialization
-	void Start () {
-		
+	void Start ()
+    {
+        gameObject.GetComponent<MeshFilter>().mesh = Data.Mesh;
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
 		
 	}
 }
