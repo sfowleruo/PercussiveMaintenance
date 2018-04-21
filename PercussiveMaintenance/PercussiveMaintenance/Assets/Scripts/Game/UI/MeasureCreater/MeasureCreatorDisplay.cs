@@ -9,8 +9,9 @@ public class MeasureCreatorDisplay : MonoBehaviour
     public GameObject LineContainer;
 
     public BeatKeeper BeatKeeper;
-	// Use this for initialization
-	void Start ()
+
+    // Use this for initialization
+    void Start ()
     {
 	    foreach(var tower in TowerSoundSources)
         {
@@ -56,5 +57,6 @@ public class MeasureCreatorDisplay : MonoBehaviour
         UpdateBeatKeeper();
         BeatKeeper.TogglePlayStop();
     }
-	
+
+
 }

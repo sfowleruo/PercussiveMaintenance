@@ -19,6 +19,8 @@ public class BeatKeeper : MonoBehaviour
     public int CurrentMeasure = 0;
     public int CurrentFrame   = 0;
 
+    public GameObject ConductorLine;
+
     bool IsPlaying = false;
 
     public void TogglePlayStop()
