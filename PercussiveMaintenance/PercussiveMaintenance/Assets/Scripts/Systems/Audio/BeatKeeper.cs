@@ -47,8 +47,29 @@ public class BeatKeeper : MonoBehaviour
         IsPlaying = false;
     }
 
+    public void HandleInput()
+    {
+        if(Input.GetKeyDown(KeyCode.A))
+        {
+            TowerSources[0].PlayClip();
+        }
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            TowerSources[1].PlayClip();
+        }
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            TowerSources[2].PlayClip();
+        }
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+
+        }
+    }
+
     public void Update()
     {
+        HandleInput();
         if (!IsPlaying)
             return;
         if(Time.time - LastNote > NoteTimePerBeat)
