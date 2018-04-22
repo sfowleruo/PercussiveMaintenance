@@ -17,6 +17,7 @@ public enum EnemyType
 
 public class BaseEnemy : RenderedActor
 {
+    public float Speed;
     public EnemyType EnemyType;
     public string ID;
 	// Use this for initialization
@@ -25,7 +26,14 @@ public class BaseEnemy : RenderedActor
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		
+	void Update ()
+    {
+        Move();
 	}
+
+    void Move()
+    {
+        float step = Speed * Time.deltaTime;
+       // transform.position = Vector3.MoveTowards(transform.position, .position, step);
+    }
 }
