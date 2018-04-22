@@ -20,6 +20,7 @@ public class BaseEnemy : RenderedActor
     public float Speed;
     public EnemyType EnemyType;
     public string ID;
+    public List<Vector3> Waypoints;
 	// Use this for initialization
 	void Start () {
 		
@@ -33,7 +34,26 @@ public class BaseEnemy : RenderedActor
 
     void Move()
     {
+        if(Waypoints.Count == 0)
+        {
+            return;
+        }
+        var target = Waypoints[0];
         float step = Speed * Time.deltaTime;
-       // transform.position = Vector3.MoveTowards(transform.position, .position, step);
+        transform.position = Vector3.MoveTowards(transform.position, target, step);
+        if(transform.position == target)
+        {
+            Waypoints.RemoveAt(0);
+            if(Waypoints.Count == 0)
+            {
+                KillSelf();
+            }
+        }
+    }
+
+    public void KillSelf()
+    {
+        Destroy(gameObject);
+        Debug.Log(ID + " Reached End Goal");
     }
 }

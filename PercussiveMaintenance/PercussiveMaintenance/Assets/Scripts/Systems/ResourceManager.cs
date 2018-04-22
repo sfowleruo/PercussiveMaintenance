@@ -36,7 +36,7 @@ public class ResourceManager : Manager
 
             tower = towerGO.AddComponent<BaseTower>();
             tower.Data = towerData;
-            tower.name = towerData.Name;
+            tower.name = towerData.ID;
 
             towerData.SetCollider(towerGO);
             towerGO.AddComponent<MeshFilter>().mesh = towerData.Mesh;

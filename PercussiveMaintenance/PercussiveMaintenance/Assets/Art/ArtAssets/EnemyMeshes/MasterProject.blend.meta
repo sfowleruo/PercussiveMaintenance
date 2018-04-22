@@ -3,18 +3,34 @@ guid: 7e020950d81ddde4e9a327bf8577b4ff
 timeCreated: 1524350934
 licenseType: Free
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 19
   fileIDToRecycleName:
     100000: Flier
     100002: FlierHP
     100004: Ground
     100006: GroundHP
     100008: //RootNode
+    100010: FlierHP_MeshPart0
+    100012: FlierHP_MeshPart1
+    100014: FlierHP_MeshPart2
+    100016: FlierHP_MeshPart3
+    100018: GroundHP_MeshPart0
+    100020: GroundHP_MeshPart1
+    100022: GroundHP_MeshPart2
+    100024: GroundHP_MeshPart3
     400000: Flier
     400002: FlierHP
     400004: Ground
     400006: GroundHP
     400008: //RootNode
+    400010: FlierHP_MeshPart0
+    400012: FlierHP_MeshPart1
+    400014: FlierHP_MeshPart2
+    400016: FlierHP_MeshPart3
+    400018: GroundHP_MeshPart0
+    400020: GroundHP_MeshPart1
+    400022: GroundHP_MeshPart2
+    400024: GroundHP_MeshPart3
     2100000: Body
     2100002: TypeIndicatorEmissive
     2100004: ThrustEmissive
@@ -23,22 +39,44 @@ ModelImporter:
     2300002: FlierHP
     2300004: Ground
     2300006: GroundHP
+    2300008: FlierHP_MeshPart0
+    2300010: FlierHP_MeshPart1
+    2300012: FlierHP_MeshPart2
+    2300014: FlierHP_MeshPart3
+    2300016: GroundHP_MeshPart0
+    2300018: GroundHP_MeshPart1
+    2300020: GroundHP_MeshPart2
+    2300022: GroundHP_MeshPart3
     3300000: Flier
     3300002: FlierHP
     3300004: Ground
     3300006: GroundHP
+    3300008: FlierHP_MeshPart0
+    3300010: FlierHP_MeshPart1
+    3300012: FlierHP_MeshPart2
+    3300014: FlierHP_MeshPart3
+    3300016: GroundHP_MeshPart0
+    3300018: GroundHP_MeshPart1
+    3300020: GroundHP_MeshPart2
+    3300022: GroundHP_MeshPart3
     4300000: GroundHP
     4300002: FlierHP
     4300004: Ground
     4300006: Flier
+    4300008: GroundHP_MeshPart0
+    4300010: GroundHP_MeshPart1
+    4300012: GroundHP_MeshPart2
+    4300014: GroundHP_MeshPart3
+    4300016: FlierHP_MeshPart0
+    4300018: FlierHP_MeshPart1
+    4300020: FlierHP_MeshPart2
+    4300022: FlierHP_MeshPart3
     7400000: Default Take
     9500000: //RootNode
-  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -51,14 +89,12 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    importAnimatedCustomProperties: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    extraUserProperties: []
     clipAnimations: []
     isReadable: 1
   meshes:
@@ -66,18 +102,13 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
-    importVisibility: 1
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
-    preserveHierarchy: 0
-    indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
@@ -87,7 +118,6 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
-    normalCalculationMode: 4
   importAnimation: 1
   copyAvatar: 0
   humanDescription:

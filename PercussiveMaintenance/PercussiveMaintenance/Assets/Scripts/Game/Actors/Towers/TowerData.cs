@@ -5,7 +5,8 @@ using UnityEngine;
 [CreateAssetMenu]
 public class TowerData : ScriptableObject
 {
-    public string Name;
+    public TowerType TowerType;
+    public string ID;
     public float Damage;
     public float Range;
     public Mesh Mesh;

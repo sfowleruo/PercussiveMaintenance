@@ -6,8 +6,8 @@ using UnityEditor;
 public class TileGridManager : Manager
 {
     public static TileGridManager Inst;
-    public Dictionary<Vector2Int, Tile> Tiles = new Dictionary<Vector2Int, Tile>();
-    public Vector2Int Size;
+    public Dictionary<Vector2, Tile> Tiles = new Dictionary<Vector2, Tile>();
+    public Vector2 Size;
     public int TileSize;
 
     int NumTiles;
@@ -21,7 +21,7 @@ public class TileGridManager : Manager
             for (int x = 0; x < Size.x; x++)
             {
                 var tile = new Tile(x, y);
-                Tiles[new Vector2Int(x, y)] = tile;
+                Tiles[new Vector2(x, y)] = tile;
             }
         }
 
@@ -40,7 +40,7 @@ public class TileGridManager : Manager
         }
 
         Tile tile = null;
-        if (!Tiles.TryGetValue(new Vector2Int(x, y), out tile))
+        if (!Tiles.TryGetValue(new Vector2(x, y), out tile))
         {
             Debug.LogError("Tile: " + x + " " + y + " is not in the dictionary.");
             return null;

@@ -3,23 +3,41 @@ guid: 928d3624c5c330748b5092370f15013f
 timeCreated: 1524350935
 licenseType: Free
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
+    100002: GroundHP_MeshPart0
+    100004: GroundHP_MeshPart1
+    100006: GroundHP_MeshPart2
+    100008: GroundHP_MeshPart3
     400000: //RootNode
+    400002: GroundHP_MeshPart0
+    400004: GroundHP_MeshPart1
+    400006: GroundHP_MeshPart2
+    400008: GroundHP_MeshPart3
     2100000: Body
     2100002: TypeIndicatorEmissive
     2100004: ThrustEmissive
     2100006: Glass
     2300000: //RootNode
+    2300002: GroundHP_MeshPart0
+    2300004: GroundHP_MeshPart1
+    2300006: GroundHP_MeshPart2
+    2300008: GroundHP_MeshPart3
     3300000: //RootNode
+    3300002: GroundHP_MeshPart0
+    3300004: GroundHP_MeshPart1
+    3300006: GroundHP_MeshPart2
+    3300008: GroundHP_MeshPart3
     4300000: GroundHP
-  externalObjects: {}
+    4300002: GroundHP_MeshPart0
+    4300004: GroundHP_MeshPart1
+    4300006: GroundHP_MeshPart2
+    4300008: GroundHP_MeshPart3
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -32,14 +50,12 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    importAnimatedCustomProperties: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    extraUserProperties: []
     clipAnimations: []
     isReadable: 1
   meshes:
@@ -47,18 +63,13 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
-    importVisibility: 1
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
-    preserveHierarchy: 0
-    indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
@@ -68,7 +79,6 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
-    normalCalculationMode: 4
   importAnimation: 1
   copyAvatar: 0
   humanDescription:

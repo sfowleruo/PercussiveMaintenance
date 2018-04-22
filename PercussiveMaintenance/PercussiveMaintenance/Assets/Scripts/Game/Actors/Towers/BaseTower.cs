@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum TowerType
+{
+    BaseDrum,
+    HighHat,
+}
+
 public class BaseTower : RenderedActor
 {
     public TowerData Data;
